@@ -1,0 +1,100 @@
+body {
+    background-color: #e3e3e3;
+    height: 100%;
+}
+.button {
+    background-color: ButtonShadow;
+    border: none;
+    color: white;
+    width: 33%;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px -1px;
+    cursor: pointer;
+    height: 60px;
+}
+.nav {
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    max-width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+.header {
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    background-color: darkgrey;
+    text-align: center;
+    font-family: "DejaVu Sans";
+    font-size: 3vw;
+    font-size: 3vh;
+    font-size-adjust: inherit;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 2% ;
+
+}
+.subheader{
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    background-color: darkgrey;
+    text-align: center;
+    font-family: "DejaVu Sans";
+    font-size: 1.5vw;
+    font-size: 1.5vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 2% ;
+}
+table, th, td{
+    display: inline-block;
+}
+table{
+    position: absolute;
+    left:20%;
+}
+img.skills{
+    width: 20vm;
+    height: 30vh;
+}
+footer{
+    height: 50px;
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    background-color: ButtonShadow ;
+    width:99%;
+    color: whitesmoke;
+    font-family: "DejaVu Sans";
+   }
+.inline {
+    display: inline;
+}
+button:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+button:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+button:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* selected link */
+button:active {
+    color: blue;
+    text-decoration: none;
+}

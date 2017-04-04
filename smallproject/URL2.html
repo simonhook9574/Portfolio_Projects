@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL</title>
+    <script>
+        function setvars()
+        {
+            var progidElement = document.getElementById("programme_id");
+            var programme_id = progidElement.value;
+            var chanidElement = document.getElementById("channel_id");
+            var channel_id = chanidElement.value;
+            var reidElement = document.getElementById("redirect_to");
+            var redirect_to = reidElement.value;
+
+            document.getElementById("Pid").innerHTML +=programme_id;
+            document.getElementById("Cid").innerHTML +=channel_id;
+            document.getElementById("Reid").innerHTML +=redirect_to;
+
+        }
+        /*function disableInputs() {
+            var myInput = document.getElementById("Pid");
+            myInput.disabled = true;
+        }*/
+        function ClipBoard()
+        {
+            holdtext.innerText = copytext.innerText;
+            Copied = holdtext.createTextRange();
+            Copied.execCommand("copy");
+            alert("URL copied to Clipbaord");
+        }
+
+    </script>
+</head>
+<body>
+
+    Programme ID: <input type="number" id="programme_id" ><br>
+    Channel ID: <input type="number" id="channel_id"><br>
+    Redirect to: <input type="text" id="redirect_to"><br>
+    <input type="button" value="Create URL" onClick="setvars(), disabled=true">
+    <input type="button" value="Reset" onClick="window.location.reload()">
+
+
+<div>
+    <p id="copytext">http://localhost:3000/ww/form_builder/forms/14/completions/new?<span id="Pid">programme_id=</span><span id="Cid">&channel_id=</span><span id="Reid">&redirect_to=/</span></p>
+</div>
+    <textarea id="holdtext" style="display: none">
+</textarea>
+    <input type="button" value="Copy to Clipboard" onClick="ClipBoard()">
+</body>
+</html>
